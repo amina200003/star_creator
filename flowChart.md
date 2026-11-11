@@ -11,7 +11,7 @@ graph TD
     Login --> Dash
     
     %% 3. BRANCHES DU DASHBOARD
-    Dash -->|Bouton| Jouer[Star(t) creating <br/> 20 Niveaux / 6 sessions par niveau]
+    Dash -->|Bouton| Jouer[Start creating <br/> 20 Niveaux / 6 sessions par niveau]
     Dash -->|Bouton| Quiz[Quizz <br/> 5 questions]
     Dash -->|Bouton| Diary[Star Diary <br/> Historique des étoiles]
     Dash -->|Bouton| Trophy[Trophées]
