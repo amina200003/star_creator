@@ -1,17 +1,17 @@
 ```mermaid
 graph TD
     %% 1. INTRO & AUTH
-    Start([Lancement de l'App]) --> Intro[Splash Screen : Lore de l'an 6026 <br/> Vibe apocalyptique + Système Solaire 3D]
+    Start([Lancement de l'App]) --> Intro[explication du contexte du jeu]
     Intro --> Auth{Authentification}
     Auth -->|Nouveau joueur| Register(Créer un compte email/mdp)
     Auth -->|Joueur existant| Login(Se connecter)
     
     %% 2. DASHBOARD
-    Register --> Dash{Tableau de Bord / Profil <br/> Fond : Galaxie en rotation <br/> UI : Niveau, Solde Dabloons}
+    Register --> Dash{Tableau de Bord / Profil <br/>  <br/> UI : Niveau, Solde Dabloons}
     Login --> Dash
     
     %% 3. BRANCHES DU DASHBOARD
-    Dash -->|Bouton| Jouer[Star t creating <br/> 20 Niveaux / 6 sessions par niveau]
+    Dash -->|Bouton| Jouer[Star(t) creating <br/> 20 Niveaux / 6 sessions par niveau]
     Dash -->|Bouton| Quiz[Quizz <br/> 5 questions]
     Dash -->|Bouton| Diary[Star Diary <br/> Historique des étoiles]
     Dash -->|Bouton| Trophy[Trophées]
@@ -21,7 +21,7 @@ graph TD
     Sim -.->|Achat| Indice(Utiliser un Indice <br/> Max 3 par session)
     Sim --> Valider{Validation des paramètres}
     
-    Valider -->|3 erreurs ou plus| Fail[ÉCHEC : Supernova ! <br/> Animation JJBA 'To be continued...' <br/> Texte : 'A planet has disappeared...']
+    Valider -->|3 erreurs ou plus| Fail[ÉCHEC]
     Fail --> Dash
     
     Valider -->|Moins de 3 erreurs| Win[SUCCÈS : Étoile forgée]
