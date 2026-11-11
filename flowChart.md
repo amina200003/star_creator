@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     %% 1. INTRO & AUTH
     Start([Lancement de l'App]) --> Intro[Splash Screen : Lore de l'an 6026 <br/> Vibe apocalyptique + Système Solaire 3D]
@@ -33,3 +34,4 @@ graph TD
     QLoop --> Score{Calcul du score}
     Score -->|+10 par bonne réponse <br/> -10 par mauvaise| GainQ[Mise à jour des Dabloons]
     GainQ --> Dash
+```
