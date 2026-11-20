@@ -142,7 +142,7 @@ def selectionner_etoile_cible(df: pd.DataFrame, niveau_joueur: int) -> list[str]
 # 5. Génération Augmentée (Augmented Generation) avec Gemini
 # Dans interroger_rag_star_creator :
 
-def interroger_rag_star_creator(df, action, niveau_joueur):
+def genere_challenge(df, action, niveau_joueur):
     
     if action == "challenge":
         # 1. Sélectionne une cible selon la difficulté
@@ -194,7 +194,7 @@ if __name__ == "__main__":
         
     )
     print(f"Question : {question_test}\n")
-    reponse = interroger_rag_star_creator(
+    reponse = genere_challenge(
         df_stars,
         action= "challenge",
         niveau_joueur= 3
